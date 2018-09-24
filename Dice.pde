@@ -1,3 +1,4 @@
+int numTotal = 0;
 void setup()
 {
 	size(1200,1000);
@@ -5,6 +6,8 @@ void setup()
 }
 void draw()
 {
+	numTotal = 0;
+	background(255);
 	for(int i = 0; i < 50; i++)
 		for(int j = 0; j < 50; j++)
 	{
@@ -12,6 +15,9 @@ void draw()
 		bob.show();
 		bob.roll();
 	}
+
+	fill(0);
+	text("Total: " + numTotal,1100,100);
 }
 void mousePressed()
 {
@@ -28,6 +34,8 @@ class Die //models one single dice cube
 		numDots = (int)(Math.random()*6)+1;
 		myX = x;
 		myY = y;
+		numTotal = numTotal + numDots;
+		
 	}
 	void roll()
 	{
