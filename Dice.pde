@@ -1,7 +1,7 @@
 int numTotal = 0;
 void setup()
 {
-	size(1000,1200);
+	size(1200,1200);
 	noLoop();
 
 }
@@ -9,7 +9,7 @@ void draw()
 {
 	numTotal = 0; 
 	background(255);
-	for(int i = 0; i < 50; i++)
+	for(int i = 0; i < 60; i++)
 		for(int j = 0; j < 50; j++)
 	{
 		Die bob = new Die(20*i,200+20*j);
@@ -20,7 +20,7 @@ void draw()
 	fill(0);
 	textAlign(CENTER,CENTER);
 	textSize(105);
-	text("You rolled a " + numTotal + "!",500,100);
+	text("You rolled a " + numTotal + "!",600,100);
 }
 void mousePressed()
 {
