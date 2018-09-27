@@ -57,29 +57,29 @@ class Die //models one single dice cube
 	{
 		//your code here
 		if (numDots == 1){
-			fill(255,0,0);
+			fill(255,0,0,70);
 			ellipse(myX+10,myY+10,4,4);
 		}
 		if (numDots == 2){
-			fill(255,0,0);
+			fill(255,0,0,70);
 			ellipse(myX+5,myY+15,4,4);
 			ellipse(myX+15,myY+5,4,4);
 		}
 		if (numDots == 3){
-			fill(255,0,0);
+			fill(255,0,0,70);
 			ellipse(myX+5,myY+15,4,4);
 			ellipse(myX+15,myY+5,4,4);
 			ellipse(myX+10,myY+10,4,4);
 		}
 		if (numDots == 4){
-			fill(255,0,0);
+			fill(255,0,0,70);
 			ellipse(myX+5,myY+15,4,4);
 			ellipse(myX+15,myY+5,4,4);
 			ellipse(myX+15,myY+15,4,4);
 			ellipse(myX+5,myY+5,4,4);
 		}
 		if (numDots == 5){
-			fill(255,0,0);
+			fill(255,0,0,70);
 			ellipse(myX+5,myY+15,4,4);
 			ellipse(myX+15,myY+5,4,4);
 			ellipse(myX+15,myY+15,4,4);
@@ -87,7 +87,7 @@ class Die //models one single dice cube
 			ellipse(myX+10,myY+10,4,4);
 		}
 		if (numDots == 6){
-			fill(255,0,0);
+			fill(255,0,0,70);
 			ellipse(myX+15,myY+10,4,4);
 			ellipse(myX+5,myY+5,4,4);
 			ellipse(myX+5,myY+10,4,4);
@@ -99,7 +99,7 @@ class Die //models one single dice cube
 	}
 	void show()
 	{
-		fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
+		fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255),50);
 		rect(myX,myY,20,20);
 		if(numDots == 1){
 			numDots1++;
